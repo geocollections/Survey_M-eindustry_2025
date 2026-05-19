@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="et">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Küsitluse avatud vastused</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <nav class="site-nav" aria-label="Lehe navigeerimine">
+        <a class="brand-mark brand-mark--light" href="index.html" aria-label="TalTech Mäenduse osakond">
+          <img src="Logo_TalTech_MO.png" alt="TalTech Mäenduse osakond">
+        </a>
+        <a class="nav-button nav-button--quiet" href="index.html">Põhiküsitlus</a>
+      </nav>
+
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro__copy">
+          <p class="eyebrow">Küsitluse lisamaterjal</p>
+          <h1 id="page-title">Peamised järeldused Eesti maavarade kaevandajate seas läbi viidud avatud küsitlusest</h1>
+          <p class="lede">
+            Sirvi vastajate kirjeldatud väljakutseid koos nende pakutud tegevussuundade ja lahendustega.
+          </p>
+        </div>
+        <div class="intro__stats" aria-label="Küsitluse kokkuvõte">
+          <div>
+            <span id="answer-count">49</span>
+            <small>vastusepaari</small>
+          </div>
+          <div class="intro__hint">
+            <span>Sirvi</span>
+            <small>Vastuste vaatamiseks libista või klõpsa</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="carousel" aria-label="Küsitluse vastuste karussell">
+        <div class="carousel__topbar">
+          <div>
+            <p class="section-kicker">Vastus</p>
+            <h2 id="slide-heading">Paar 1</h2>
+          </div>
+          <div class="carousel__controls" aria-label="Karusselli juhtnupud">
+            <button class="random-button" id="random-button" type="button">Juhuslik</button>
+            <button class="icon-button" id="prev-button" type="button" aria-label="Eelmine vastus">
+              <span aria-hidden="true">‹</span>
+            </button>
+            <button class="icon-button" id="next-button" type="button" aria-label="Järgmine vastus">
+              <span aria-hidden="true">›</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="progress" aria-hidden="true">
+          <span id="progress-bar"></span>
+        </div>
+
+        <div class="viewport" id="viewport">
+          <div class="track" id="track" aria-live="polite"></div>
+        </div>
+
+        <div class="carousel__footer">
+          <p id="counter" class="counter">1 / 49</p>
+          <div class="ticks" id="ticks" aria-label="Vali vastusepaar"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="survey-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
